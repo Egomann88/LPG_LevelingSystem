@@ -17,3 +17,9 @@ How to setup the site
 index.html - the main file of the html code
 
 requierments the site needs:
+
+-
+-
+-
+-
+-
