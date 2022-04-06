@@ -1,0 +1,26 @@
+section {
+    border: 2px gray solid;
+    padding: 5vh;
+    /* view height (25vh = 25% from screen) */
+    /* 1. Value is x (honrizontal) || 2. Value is y (vertikal) */
+    margin: 5vh 25vh;
+    border-radius: 0.5rem;
+    /* https://html-css-js.com/css/generator/box-shadow/ */
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 6px 9px 18px 2px #83868B;
+    box-shadow: 0px 10px 13px -7px #000000, 6px 9px 18px 2px #83868B;
+}
+
+h1 {
+    flex-direction: row;
+}
+
+.lvl_Container {
+    display: flex;
+}
+
+.lvl_Box {
+    flex-direction: column;
+    width: 33%;
+    /* 100%, 1 per line - 50%, 2 per line - 33%, 3 per line - 25%, 4 per line - 20%, 5 per line */
+    margin: 0px 2vh;
+}
