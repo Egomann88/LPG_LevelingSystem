@@ -43,7 +43,7 @@ Home requierments:
 - Explaination
 
 
-lvl Up requierments:
+lvlUp requierments:
 - Title with all levels
 - <h2>Level</h2>
 - <li>M. Res</li>
