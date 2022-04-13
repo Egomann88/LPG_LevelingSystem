@@ -3,6 +3,7 @@ A Website, about the Leveling System of the LPG
 
 How to push:
 
+- ALLWAYS PULL BEFORE YOU PUSH SOMETHING
 [FileName] [Message]
 
 
@@ -22,10 +23,12 @@ How to setup the site:
 index.html - the main file of the html code
 use Live Server plugin or start with server
 
+
 all Sites:
 - index.html -> Homepage with Introduktion
 - lvlUp.html -> page with all levels
 - map.html -> page with all maps 
+
 
 requierments the site needs:
 
@@ -34,9 +37,11 @@ requierments the site needs:
 - Site2 -> lvl up site
 - Site3 -> EntireMap with all planets and their maps
 
+
 Home requierments:
 - Introduktion
 - Explaination
+
 
 lvl Up requierments:
 - Title with all levels
@@ -46,6 +51,7 @@ lvl Up requierments:
 - <li>Ges-Sinne</li>
 - <li>Bewegung</li>
 - <li>Extras</li>
+
 
 Map requierments:
 -
