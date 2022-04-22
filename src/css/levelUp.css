@@ -34,24 +34,19 @@ h3 {
 
 /* lvl ups */
 
-.lvl_Container {
+.lvlSystemContainer {
     display: flex;
     flex-wrap: wrap;
     overflow: hidden;
     justify-content: left;
 }
 
-.lvl_Box {
+.lvlSystemBox {
     width: 100%;
     overflow: hidden;
     flex-direction: column;
     /* 100%, 1 per line - 50%, 2 per line - 33%, 3 per line - 25%, 4 per line - 20%, 5 per line */
 }
-
-
-/* invest points */
-
-.invest_Points {}
 
 
 /* media screens */
@@ -74,7 +69,7 @@ h3 {
 /* lg */
 
 @media (min-width: 1024px) {
-    .lvl_Box {
+    .lvlSystemBox {
         width: 50%;
     }
 }
@@ -83,8 +78,8 @@ h3 {
 /* xl */
 
 @media (min-width: 1280px) {
-    .lvl_Box {
-        width: 33%;
+    .lvlSystemBox {
+        width: 33.3%;
     }
 }
 
