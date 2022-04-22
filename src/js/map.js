@@ -7,7 +7,6 @@
 
 /**
  * When the pages loads, random css-Classes will be given to the map Containers.<br />
- * @async functions loads async to site 
  * Creates an array, with all css, which shall be used.<br />
  * a for-loop run 20 times inwhich two rnd number will be generated.<br />
  * @rndClasses array which all css classes.<br />
