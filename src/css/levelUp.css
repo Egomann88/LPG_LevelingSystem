@@ -1,0 +1,92 @@
+section {
+    border: 2px gray solid;
+    padding: 5vh;
+    /* view height (25vh = 25% from screen) */
+    /* 1. Value is x (honrizontal) || 2. Value is y (vertikal) */
+    margin: 5vh 5vh;
+    border-radius: 0.5rem;
+    /* https://html-css-js.com/css/generator/box-shadow/ */
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 6px 9px 18px 2px #83868B;
+    box-shadow: 0px 10px 13px -7px #000000, 6px 9px 18px 2px #83868B;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    margin-left: -3vh;
+    font-size: 18px;
+}
+
+h1 {
+    flex-direction: row;
+}
+
+h2 {
+    flex-direction: row;
+}
+
+h3 {
+    margin-bottom: -2px;
+}
+
+
+/* lvl ups */
+
+.lvl_Container {
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    justify-content: left;
+}
+
+.lvl_Box {
+    width: 100%;
+    overflow: hidden;
+    flex-direction: column;
+    /* 100%, 1 per line - 50%, 2 per line - 33%, 3 per line - 25%, 4 per line - 20%, 5 per line */
+}
+
+
+/* invest points */
+
+.invest_Points {}
+
+
+/* media screens */
+
+
+/* sm */
+
+@media (min-width: 640px) {}
+
+
+/* md */
+
+@media (min-width: 768px) {
+    section {
+        margin: 5vh 15vh;
+    }
+}
+
+
+/* lg */
+
+@media (min-width: 1024px) {
+    .lvl_Box {
+        width: 50%;
+    }
+}
+
+
+/* xl */
+
+@media (min-width: 1280px) {
+    .lvl_Box {
+        width: 33%;
+    }
+}
+
+
+/* animations */
