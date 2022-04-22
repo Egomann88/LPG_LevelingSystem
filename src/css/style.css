@@ -60,41 +60,41 @@ h1,
 h2 {
     color: #0a4db1;
     letter-spacing: 1.25px;
-    font-size: 32px;
+    font-size: 36px;
     font-weight: bold;
 }
 
 h1 {
-    font-size: 36px;
+    font-size: 40px;
     text-shadow: 2px 2px 0 #bcbcbc, 4px 4px 0 #9c9c9c;
 }
 
 h3,
 h4 {
-    font-size: 24px;
+    font-size: 28px;
     letter-spacing: 0.5px;
     color: #0a6eb1;
 }
 
 h3 {
-    font-size: 28px;
+    font-size: 32px;
 }
 
 
 /*
-    - https://tailwindcss.com/docs/animation
-    - https://www.w3schools.com/css/css3_animations.asp
-
-    duration -> time the animation has
-    iteration-count -> how often the a. should repeat
-    timing-function -> property specifies the speed curve of the animation
+- https://tailwindcss.com/docs/animation
+- https://www.w3schools.com/css/css3_animations.asp
+duration -> time the animation has
+iteration-count -> how often the a. should repeat
+timing-function -> property specifies the speed curve of the animation
 */
 
 .animate-pulse {
     /* animation-name: pulse;
-    animation-duration: 2s;
-    animation-timing-function: cubic-bezier(0.4, 0, 0.6, 1);
-    animation-iteration-count: infinite; */
+       animation-duration: 2s;
+       animation-timing-function: cubic-bezier(0.4, 0, 0.6, 1);
+       animation-iteration-count: infinite;
+    */
     animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
 
@@ -113,5 +113,14 @@ h3 {
     }
     50% {
         opacity: .5;
+    }
+}
+
+
+/* media screen */
+
+@media (min-width: 640px) {
+    h1 {
+        margin-left: 5vh;
     }
 }
