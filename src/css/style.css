@@ -80,6 +80,15 @@ h3 {
     font-size: 32px;
 }
 
+a:link:hover {
+    font-size: 20px;
+    background-color: #e6f5ff;
+}
+
+a:visited {
+    color: #000;
+}
+
 
 /*
 - https://tailwindcss.com/docs/animation
