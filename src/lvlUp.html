@@ -6,27 +6,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./assets/levelUp.png">
+    <!-- extern -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <!-- global stuff -->
     <link rel="stylesheet" href="./css/style.css">
     <script src="./js/script.js"></script>
     <!-- filebased -->
     <link rel="stylesheet" href="./css/lvlUp.css">
-    <script src="./js/index.js"></script>
+    <script src="./js/lvlUp.js"></script>
     <!-- ./ is to link a folder or file in the same directory -->
     <!-- ../ is to link a folder / file in an outside directory -->
     <title>Leveling System</title>
 </head>
 
 <body>
-    <header>
-        <a href="" class="logo"><img src="" alt="CompanyLogo" /></a>
-        <div class="header-right">
-            <a href="index.html">Home</a>
-            <a href="lvlUp.html">Level UP</a>
-            <a href="map.html">Map</a>
-        </div>
-    </header>
-    <!-- <object type="text/html" data="header.html"></object> - import html Element -->
+    <div id="Header"></div>
     <!-- index / content section -->
     <section>
         <h1>LPG - Leveling System</h1>
@@ -220,13 +216,16 @@
             </div>
         </div>
         <div class="lvlSystemContainer">
-            <div class="lvlSystemBox">
+            <div class="lvlSystemBox-wide">
                 <h2>Get Weapon Exp</h2>
                 <p><b>25 Exp</b> if you help to kill an Enemy (at least 1 hit with your Weapon).</p>
                 <p><b>50 Exp</b> if you killed a Enemy all by yourself.</p>
                 <p><b>Bosses may give</b> more - it variates.</p>
                 <p><b>Only the Weapon you used get EXP.</b></p>
                 <p><b>Needed Exp is same as which Levels.</b></p>
+            </div>
+            <div class="lvlSystemBox-wide">
+
             </div>
             <div class="lvlSystemBox">
 
