@@ -5,6 +5,13 @@
 
 // onload page
 
+window.onload = function init() {
+    this.loadHeader(); // loading the Header
+    this.insertCssClasses();
+}
+
+// functions
+
 /**
  * When the pages loads, random css-Classes will be given to the map Containers.<br />
  * Creates an array, with all css, which shall be used.<br />
@@ -13,20 +20,14 @@
  * @id id the id off the Map Containers.<br />
  * @css css will be the insertet class.<br />
  */
-window.onload = function insertCssClasses() {
-
-
-    // import classes from @style.css and @map.css
+async function insertCssClasses() {
     let rndClasses = [
-        "mt-10", "mt-20", "mt-30", "mt-40", "mt-50", "mt-60", "animate-pulse", "mt-10", "mt-20", "mt-30",
-        "mt-40", "mt-50", "mt-60",
+        "mt-10", "mt-20", "mt-30", "mt-40", "mt-50", "mt-60"
     ];
 
     for (let i = 0; i <= 20; i++) {
         let id = Math.floor((Math.random() * 20) + 1); // between 1 and 20
-        let css = Math.floor((Math.random() * 13) + 1); // between 1 and 13
+        let css = Math.floor((Math.random() * rndClasses.length) + 1); // all rndClasses
         document.getElementById(id.toString().padStart(2, "0")).classList.add(rndClasses[css - 1]);
     }
 }
-
-// functions
