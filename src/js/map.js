@@ -22,7 +22,8 @@ window.onload = function init() {
  */
 async function insertCssClasses() {
     let rndClasses = [
-        "mt-10", "mt-20", "mt-30", "mt-40", "mt-50", "mt-60"
+        "mt-10", "mt-20", "mt-30", "mt-40", "mt-50", "mt-60",
+        "py-10", "py-20", "py-30", "py-40", "py-50", "py-60"
     ];
 
     for (let i = 0; i <= 20; i++) {
