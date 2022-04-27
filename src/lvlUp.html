@@ -2,230 +2,230 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./assets/levelUp.png">
-    <!-- global stuff -->
-    <link rel="stylesheet" href="./css/style.css">
-    <script src="./js/script.js"></script>
-    <!-- filebased -->
-    <link rel="stylesheet" href="./css/lvlUp.css">
-    <script src="./js/lvlUp.js"></script>
-    <title>Leveling System</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./assets/levelUp.png">
+  <!-- global stuff -->
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="./js/script.js"></script>
+  <!-- filebased -->
+  <link rel="stylesheet" href="./css/lvlUp.css">
+  <script src="./js/lvlUp.js"></script>
+  <title>Leveling System</title>
 </head>
 
 <body>
-    <div id="Header"></div>
-    <!-- index / content section -->
-    <section>
-        <h1>LPG - Leveling System</h1>
-        <h2>Level UP's</h2>
-        <div class="lvlSystemContainer">
-            <div id="ID" class="lvlSystemBox">
-                <h3>Level 1</h3>
-                <ul>
-                    <li>Leben: <b>5</b></li>
-                    <li>Magische Res: <b>0</b></li>
-                    <li>Physische: <b>1</b></li>
-                    <li>Ges-Sinne: <b>8</b></li>
-                    <li>Bewegung: <b>3</b></li>
-                    <li>EXP bis nächsten: <b>500</b></li>
-                    <li>Extras: <b>2 Abilities</b></li>
-                </ul>
-            </div>
-            <div class="lvlSystemBox">
-                <h3>Level 2</h3>
-                <ul>
-                    <li>Leben: <b>2</b></li>
-                    <li>Magische Res: <b>4</b></li>
-                    <li>Physische: <b>0</b></li>
-                    <li>Ges-Sinne: <b>3</b></li>
-                    <li>Bewegung: <b>1</b></li>
-                    <li>EXP bis nächsten: <b>1000</b></li>
-                    <li>Extras: <b>none</b></li>
-                </ul>
-            </div>
-            <div class="lvlSystemBox">
-                <h3>Level 3</h3>
-                <ul>
-                    <li>Leben: <b>2</b></li>
-                    <li>Magische Res: <b>2</b></li>
-                    <li>Physische: <b>0</b></li>
-                    <li>Ges-Sinne: <b>3</b></li>
-                    <li>Bewegung: <b>1</b></li>
-                    <li>EXP bis nächsten: <b>2000</b></li>
-                    <li>Extras: <b>1 Ability / level Ability</b></li>
-                </ul>
-            </div>
-            <div class="lvlSystemBox">
-                <h3>Level 4</h3>
-                <ul>
-                    <li>Leben: <b>1</b></li>
-                    <li>Magische Res: <b>3</b></li>
-                    <li>Physische: <b>1</b></li>
-                    <li>Ges-Sinne: <b>3</b></li>
-                    <li>Bewegung: <b>(new Talent)</b></li>
-                    <li>EXP bis nächsten: <b>4000</b></li>
-                    <li>Extras: <b>1 Ability / level Ability</b></li>
-                </ul>
-            </div>
-        </div>
-        <h2>Invest Points</h2>
-        <div class="lvlSystemContainer">
-            <div class="lvlSystemBox">
-                <h3>Leben</h3>
-                <ul>
-                    <li>Leben: <b>+1</b></li>
-                    <li>Mana: <b>+10</b></li>
-                    <li>Energie: <b>+10</b></li>
-                    <li><b>1 Pt.</b> for <b>any upgrade</b></li>
-                </ul>
-            </div>
-            <div class="lvlSystemBox">
-                <h3>Magische Res</h3>
-                <ul>
-                    <li><a href="./assets/MagicSystem.jpg" target="_blank">Magic System Picture</a></li>
-                    <li><b>T1</b> Magic (blue bg) -> <b>2 Pt.</b> to <b>learn</b></li>
-                    <li><b>T2</b> Magic (white bg) -> <b>3 Pts.</b> to <b>learn</b>
-                    </li>
-                    <li>For <b>every connection</b> to that Element <b>-1 Pt.</b> to <b>learn</b></li>
-                    <li><b>T1</b> Magic (blue bg) -> <b>1 Pt.</b> at begining <b>(upgrade)</b></li>
-                    <li><b>T2</b> Magic (white bg) -> <b>2 Pts.</b> at begining <b>(upgrade)</b></li>
-                    <li><b>+ 1 Pt.</b> to spend for any <b>Element Upgrade</b></li>
-                </ul>
-            </div>
-            <div class="lvlSystemBox">
-                <h3>Physische</h3>
-                <ul>
-                    <li><b>1 Pt.</b> for <b>any upgrade</b></li>
-                </ul>
-            </div>
-            <div class="lvlSystemBox">
-                <h3>Ges-Sinne</h3>
-                <ul>
-                    <li><b>1 Pt.</b> for <b>any upgrade</b></li>
-                    <li>The <b>max</b> amout of Points musn't be over your charater level</li>
-                </ul>
-            </div>
-            <div class="lvlSystemBox">
-                <h3>Bewegung</h3>
-                <ul>
-                    <li><b>1 Pt.</b> for <b>any upgrade</b></li>
-                    <li>The <b>max</b> amout of Points musn't be over your charater level</li>
-                </ul>
-            </div>
-            <div class="lvlSystemBox">
-                <h3>Extras</h3>
-                <ul>
-                    <li><b>1 Pt.</b> to <b>upgrade / level an Ability</b></li>
-                </ul>
-            </div>
-        </div>
-        <h2>Weapon Level</h2>
-        <div class="lvlSystemContainer">
-            <div class="lvlSystemBox">
-                <h3>Level 1</h3>
-                <ul>
-                    <li>Damage: <b>(mostly) d6</b></li>
-                    <li>Exp until next: <b>500</b></li>
-                </ul>
-            </div>
-            <div class="lvlSystemBox">
-                <h3>Level 2</h3>
-                <ul>
-                    <li>Damage: <b>(one dice bigger) d8</b></li>
-                    <li>Exp until next: <b>1000</b></li>
-                </ul>
-            </div>
-            <div class="lvlSystemBox">
-                <h3>Level 3</h3>
-                <ul>
-                    <li>Damage: <b>(one dice bigger) d12</b></li>
-                    <li>Exp until next: <b>2000</b></li>
-                </ul>
-            </div>
-            <div class="lvlSystemBox">
-                <h3>Level 4</h3>
-                <ul>
-                    <li>Damage: <b>(one dice bigger) d12 + d4</b></li>
-                    <li>Exp until next: <b>4000</b></li>
-                </ul>
-            </div>
-            <div class="lvlSystemBox">
-                <h3>Level 5</h3>
-                <ul>
-                    <li>Damage: <b>(one dice bigger) d12 + d6</b></li>
-                    <li>Exp until next: <b>8000</b></li>
-                </ul>
-            </div>
-            <div class="lvlSystemBox">
-                <h3>Level 6</h3>
-                <ul>
-                    <li>Damage: <b>(one dice bigger) d20</b></li>
-                    <li>Exp until next: <b>16000</b></li>
-                </ul>
-            </div>
-            <div class="lvlSystemBox">
-                <h3>Level 7</h3>
-                <ul>
-                    <li>Damage: <b>(one dice bigger) d20 + d4</b></li>
-                    <li>Exp until next: <b>32000</b></li>
-                </ul>
-            </div>
-            <div class="lvlSystemBox">
-                <h3>Level 8</h3>
-                <ul>
-                    <li>Damage: <b>(one dice bigger) d20 + d6</b></li>
-                    <li>Exp until next: <b>64000</b></li>
-                </ul>
-            </div>
-            <div class="lvlSystemBox">
-                <h3>Level 9</h3>
-                <ul>
-                    <li>Damage: <b>(one dice bigger) d20 + d8</b></li>
-                    <li>Exp until next: <b>128000</b></li>
-                </ul>
-            </div>
-            <div class="lvlSystemBox">
-                <h3>Level 10</h3>
-                <ul>
-                    <li>Damage: <b>(one dice bigger) d20 + d12</b></li>
-                    <li>Exp until next: <b>256000</b></li>
-                </ul>
-            </div>
-            <div class="lvlSystemBox">
-                <h3>Level 11</h3>
-                <ul>
-                    <li>Damage: <b>(one dice bigger) d20 + d20</b></li>
-                    <li>Exp until next: <b>512000</b></li>
-                </ul>
-            </div>
-            <div class="lvlSystemBox">
-                <h3>Level 12</h3>
-                <ul>
-                    <li>Damage: <b>(one dice bigger) d100</b></li>
-                    <li>Exp until next: <b>X</b></li>
-                </ul>
-            </div>
-        </div>
-        <div class="lvlSystemContainer">
-            <div class="lvlSystemBox-wide">
-                <h2>Get Weapon Exp</h2>
-                <p><b>25 Exp</b> if you help to kill an Enemy (at least 1 hit with your Weapon).</p>
-                <p><b>50 Exp</b> if you killed a Enemy all by yourself.</p>
-                <p><b>Bosses may give</b> more - it variates.</p>
-                <p><b>Only the Weapon you used get EXP.</b></p>
-                <p><b>Needed Exp is same as which Levels.</b></p>
-            </div>
-            <div class="lvlSystemBox-wide">
+  <header id="Header"></header>
+  <!-- index / content section -->
+  <section>
+    <h1>LPG - Leveling System</h1>
+    <h2>Level UP's</h2>
+    <div class="lvlSystemContainer">
+      <div id="ID" class="lvlSystemBox">
+        <h3>Level 1</h3>
+        <ul>
+          <li>Leben: <b>5</b></li>
+          <li>Magische Res: <b>0</b></li>
+          <li>Physische: <b>1</b></li>
+          <li>Ges-Sinne: <b>8</b></li>
+          <li>Bewegung: <b>3</b></li>
+          <li>EXP bis nächsten: <b>500</b></li>
+          <li>Extras: <b>2 Abilities</b></li>
+        </ul>
+      </div>
+      <div class="lvlSystemBox">
+        <h3>Level 2</h3>
+        <ul>
+          <li>Leben: <b>2</b></li>
+          <li>Magische Res: <b>4</b></li>
+          <li>Physische: <b>0</b></li>
+          <li>Ges-Sinne: <b>3</b></li>
+          <li>Bewegung: <b>1</b></li>
+          <li>EXP bis nächsten: <b>1000</b></li>
+          <li>Extras: <b>none</b></li>
+        </ul>
+      </div>
+      <div class="lvlSystemBox">
+        <h3>Level 3</h3>
+        <ul>
+          <li>Leben: <b>2</b></li>
+          <li>Magische Res: <b>2</b></li>
+          <li>Physische: <b>0</b></li>
+          <li>Ges-Sinne: <b>3</b></li>
+          <li>Bewegung: <b>1</b></li>
+          <li>EXP bis nächsten: <b>2000</b></li>
+          <li>Extras: <b>1 Ability / level Ability</b></li>
+        </ul>
+      </div>
+      <div class="lvlSystemBox">
+        <h3>Level 4</h3>
+        <ul>
+          <li>Leben: <b>1</b></li>
+          <li>Magische Res: <b>3</b></li>
+          <li>Physische: <b>1</b></li>
+          <li>Ges-Sinne: <b>3</b></li>
+          <li>Bewegung: <b>(new Talent)</b></li>
+          <li>EXP bis nächsten: <b>4000</b></li>
+          <li>Extras: <b>1 Ability / level Ability</b></li>
+        </ul>
+      </div>
+    </div>
+    <h2>Invest Points</h2>
+    <div class="lvlSystemContainer">
+      <div class="lvlSystemBox">
+        <h3>Leben</h3>
+        <ul>
+          <li>Leben: <b>+1</b></li>
+          <li>Mana: <b>+10</b></li>
+          <li>Energie: <b>+10</b></li>
+          <li><b>1 Pt.</b> for <b>any upgrade</b></li>
+        </ul>
+      </div>
+      <div class="lvlSystemBox">
+        <h3>Magische Res</h3>
+        <ul>
+          <li><a href="./assets/MagicSystem.jpg" target="_blank">Magic System Picture</a></li>
+          <li><b>T1</b> Magic (blue bg) -> <b>2 Pt.</b> to <b>learn</b></li>
+          <li><b>T2</b> Magic (white bg) -> <b>3 Pts.</b> to <b>learn</b>
+          </li>
+          <li>For <b>every connection</b> to that Element <b>-1 Pt.</b> to <b>learn</b></li>
+          <li><b>T1</b> Magic (blue bg) -> <b>1 Pt.</b> at begining <b>(upgrade)</b></li>
+          <li><b>T2</b> Magic (white bg) -> <b>2 Pts.</b> at begining <b>(upgrade)</b></li>
+          <li><b>+ 1 Pt.</b> to spend for any <b>Element Upgrade</b></li>
+        </ul>
+      </div>
+      <div class="lvlSystemBox">
+        <h3>Physische</h3>
+        <ul>
+          <li><b>1 Pt.</b> for <b>any upgrade</b></li>
+        </ul>
+      </div>
+      <div class="lvlSystemBox">
+        <h3>Ges-Sinne</h3>
+        <ul>
+          <li><b>1 Pt.</b> for <b>any upgrade</b></li>
+          <li>The <b>max</b> amout of Points musn't be over your charater level</li>
+        </ul>
+      </div>
+      <div class="lvlSystemBox">
+        <h3>Bewegung</h3>
+        <ul>
+          <li><b>1 Pt.</b> for <b>any upgrade</b></li>
+          <li>The <b>max</b> amout of Points musn't be over your charater level</li>
+        </ul>
+      </div>
+      <div class="lvlSystemBox">
+        <h3>Extras</h3>
+        <ul>
+          <li><b>1 Pt.</b> to <b>upgrade / level an Ability</b></li>
+        </ul>
+      </div>
+    </div>
+    <h2>Weapon Level</h2>
+    <div class="lvlSystemContainer">
+      <div class="lvlSystemBox">
+        <h3>Level 1</h3>
+        <ul>
+          <li>Damage: <b>(mostly) d6</b></li>
+          <li>Exp until next: <b>500</b></li>
+        </ul>
+      </div>
+      <div class="lvlSystemBox">
+        <h3>Level 2</h3>
+        <ul>
+          <li>Damage: <b>(one dice bigger) d8</b></li>
+          <li>Exp until next: <b>1000</b></li>
+        </ul>
+      </div>
+      <div class="lvlSystemBox">
+        <h3>Level 3</h3>
+        <ul>
+          <li>Damage: <b>(one dice bigger) d12</b></li>
+          <li>Exp until next: <b>2000</b></li>
+        </ul>
+      </div>
+      <div class="lvlSystemBox">
+        <h3>Level 4</h3>
+        <ul>
+          <li>Damage: <b>(one dice bigger) d12 + d4</b></li>
+          <li>Exp until next: <b>4000</b></li>
+        </ul>
+      </div>
+      <div class="lvlSystemBox">
+        <h3>Level 5</h3>
+        <ul>
+          <li>Damage: <b>(one dice bigger) d12 + d6</b></li>
+          <li>Exp until next: <b>8000</b></li>
+        </ul>
+      </div>
+      <div class="lvlSystemBox">
+        <h3>Level 6</h3>
+        <ul>
+          <li>Damage: <b>(one dice bigger) d20</b></li>
+          <li>Exp until next: <b>16000</b></li>
+        </ul>
+      </div>
+      <div class="lvlSystemBox">
+        <h3>Level 7</h3>
+        <ul>
+          <li>Damage: <b>(one dice bigger) d20 + d4</b></li>
+          <li>Exp until next: <b>32000</b></li>
+        </ul>
+      </div>
+      <div class="lvlSystemBox">
+        <h3>Level 8</h3>
+        <ul>
+          <li>Damage: <b>(one dice bigger) d20 + d6</b></li>
+          <li>Exp until next: <b>64000</b></li>
+        </ul>
+      </div>
+      <div class="lvlSystemBox">
+        <h3>Level 9</h3>
+        <ul>
+          <li>Damage: <b>(one dice bigger) d20 + d8</b></li>
+          <li>Exp until next: <b>128000</b></li>
+        </ul>
+      </div>
+      <div class="lvlSystemBox">
+        <h3>Level 10</h3>
+        <ul>
+          <li>Damage: <b>(one dice bigger) d20 + d12</b></li>
+          <li>Exp until next: <b>256000</b></li>
+        </ul>
+      </div>
+      <div class="lvlSystemBox">
+        <h3>Level 11</h3>
+        <ul>
+          <li>Damage: <b>(one dice bigger) d20 + d20</b></li>
+          <li>Exp until next: <b>512000</b></li>
+        </ul>
+      </div>
+      <div class="lvlSystemBox">
+        <h3>Level 12</h3>
+        <ul>
+          <li>Damage: <b>(one dice bigger) d100</b></li>
+          <li>Exp until next: <b>X</b></li>
+        </ul>
+      </div>
+    </div>
+    <div class="lvlSystemContainer">
+      <div class="lvlSystemBox-wide">
+        <h2>Get Weapon Exp</h2>
+        <p><b>25 Exp</b> if you help to kill an Enemy (at least 1 hit with your Weapon).</p>
+        <p><b>50 Exp</b> if you killed a Enemy all by yourself.</p>
+        <p><b>Bosses may give</b> more - it variates.</p>
+        <p><b>Only the Weapon you used get EXP.</b></p>
+        <p><b>Needed Exp is same as which Levels.</b></p>
+      </div>
+      <div class="lvlSystemBox-wide">
 
-            </div>
-            <div class="lvlSystemBox">
+      </div>
+      <div class="lvlSystemBox">
 
-            </div>
-        </div>
-    </section>
+      </div>
+    </div>
+  </section>
 </body>
 
 </html>

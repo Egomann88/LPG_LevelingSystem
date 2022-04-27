@@ -11,7 +11,7 @@
 } */
 
 window.onload = function init() {
-    this.loadHeader();
+  this.loadHeader();
 }
 
 // functions
@@ -25,13 +25,13 @@ window.onload = function init() {
  * @return {String} the resulting HTML string fragment
  */
 async function fetchHtmlAsText(url) {
-    return await (await fetch(url)).text();
+  return await (await fetch(url)).text();
 }
 
 /**
  * loads the Header
  */
 async function loadHeader() {
-    const contentDiv = document.getElementById("Header");
-    contentDiv.innerHTML = await fetchHtmlAsText("header.html");
+  const contentDiv = document.getElementById("Header");
+  contentDiv.innerHTML = await fetchHtmlAsText("header.html");
 }

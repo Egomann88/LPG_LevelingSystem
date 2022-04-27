@@ -6,8 +6,8 @@
 // onload page
 
 window.onload = function init() {
-    this.loadHeader(); // loading the Header
-    this.insertCssClasses();
+  this.loadHeader(); // loading the Header
+  this.insertCssClasses();
 }
 
 // functions
@@ -21,14 +21,14 @@ window.onload = function init() {
  * @css css will be the insertet class.<br />
  */
 async function insertCssClasses() {
-    let rndClasses = [
-        "mt-10", "mt-20", "mt-30", "mt-40", "mt-50", "mt-60",
-        "py-10", "py-20", "py-30", "py-40", "py-50", "py-60"
-    ];
+  let rndClasses = [
+    "mt-10", "mt-20", "mt-30", "mt-40", "mt-50", "mt-60",
+    //"py-10", "py-20", "py-30", "py-40", "py-50", "py-60"
+  ];
 
-    for (let i = 0; i <= 20; i++) {
-        let id = Math.floor((Math.random() * 20) + 1); // between 1 and 20
-        let css = Math.floor((Math.random() * rndClasses.length) + 1); // all rndClasses
-        document.getElementById(id.toString().padStart(2, "0")).classList.add(rndClasses[css - 1]);
-    }
+  for (let i = 0; i <= 6; i++) {
+    let id = Math.floor((Math.random() * 6) + 1); // between 1 and 20
+    let css = Math.floor((Math.random() * rndClasses.length) + 1); // all rndClasses
+    document.getElementById(id.toString().padStart(2, "0")).classList.add(rndClasses[css - 1]);
+  }
 }
