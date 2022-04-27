@@ -7,7 +7,7 @@
 
 window.onload = function init() {
   this.loadHeader(); // loading the Header
-  this.insertCssClasses();
+  //this.insertCssClasses();
 }
 
 // functions
