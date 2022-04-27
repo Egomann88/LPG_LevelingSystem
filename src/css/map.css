@@ -61,8 +61,7 @@
 
 @media (min-width: 768px) {
     .mapOverall {
-        max-width: 42rem/* 672px */
-        ;
+        max-width: 672px;
         margin-left: auto;
         margin-right: auto;
     }
@@ -73,8 +72,7 @@
         flex-shrink: 0;
     }
     .mapImage {
-        width: 12rem/* 192px */
-        ;
+        width: 192px;
     }
     .flexContainer {
         display: flex;
