@@ -43,6 +43,9 @@ a:visited {
     color: #000;
 }
 
+.hidden {
+  display: none;
+}
 
 /*
 - https://tailwindcss.com/docs/animation

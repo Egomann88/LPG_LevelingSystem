@@ -18,6 +18,27 @@
 <body>
   <header id="Header"></header>
   <section>
+    <!-- modal -->
+    <div id="modalPage" class="">
+      <section class="modalSection">
+        <div onclick="toggleModal()" class="modalBackground"></div>
+      </section>
+      <div class="modalContainer">
+        <div class="modalContainerGrid">
+          <div class="modalContainerBox">
+            <div style="width: 100%;">
+              <h2 id="title"></h2>
+              <p id="titleText"></p>
+              <h2 id="story"></h2>
+              <p id="storyText"></p>
+              <h2 id="picures"></h2>
+              <p id="picuresText"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- main page -->
     <h1>LPG - Maps of the Aurbis</h1>
     <div class="page-padding">
       <div class="flexContainer">
@@ -25,14 +46,17 @@
         <div id="01" class="mapOverall">
           <div class="mapContianer">
             <div class="mapImageContainer">
-              <img src="" alt="Kein Bild vorhanden" class="mapImage" />
+              <a href="./assets/Namek.jpg" target="_blank">
+                <img src="./assets/Namek.jpg" alt="Kein Bild vorhanden" class="mapImage" />
+              </a>
             </div>
             <div class="mapContentContainer">
-              <h4 class="mapContentTitle">
-                LPG
-              </h4>
+              <a onclick="toggleModal(1)" href="#" class="mapContentTitle">
+                Namek
+              </a>
               <p class="mapContentText">
-                Lorem
+                Once in Times, it was well inhabited. But by now, only folks which are too weak or
+                refuse to leave remain on this planet.<br /><b style="opacity: 0; cursor: default;">d</b>
               </p>
             </div>
           </div>
@@ -41,14 +65,17 @@
         <div id="02" class="mapOverall">
           <div class="mapContianer">
             <div class="mapImageContainer">
-              <img src="./assets/Hexagram.jpg" alt="Kein Bild vorhanden" class="mapImage" />
+              <a href="./assets/Hexagram.jpg" target="_blank">
+                <img src="./assets/Hexagram.jpg" alt="Kein Bild vorhanden" class="mapImage" style="object-fit: none;" />
+              </a>
             </div>
             <div class="mapContentContainer">
-              <h4 class="mapContentTitle">
-                Arkanis
-              </h4>
+              <a onclick="toggleModal(2)" href="#" class="mapContentTitle">
+                Lorkarniya
+              </a>
               <p class="mapContentText">
-
+                This planet is the home and master creation of the gods. Everything on this planet consists of magic.
+                Yet in the hidden corners where the gods' gaze does not fall, there are those who they should fear...
               </p>
             </div>
           </div>
@@ -59,15 +86,18 @@
         <div id="03" class="mapOverall">
           <div class="mapContianer">
             <div class="mapImageContainer">
-              <img src="" alt="Kein Bild vorhanden" class="mapImage" />
+              <a href="./assets/World.jpg" target="_blank">
+                <img src="./assets/World.jpg" alt="Kein Bild vorhanden" class="mapImage" />
+              </a>
             </div>
             <div class="mapContentContainer">
-              <h4 class="mapContentTitle">
-                KGG geht Live
-              </h4>
+              <a onclick="toggleModal(3)" href="#" class="mapContentTitle">
+                Asterya
+              </a>
               <p class="mapContentText">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores nisi inventore saepe dolorum nemo,
-                dolore at fuga cumque a eum architecto iusto neque reprehenderit quia dicta atque quos vitae? Odit!
+                A Planet inwhich mostly Humans life. These Humans are Haited by the <i>remaining</i> Races. The
+                Dragonking prepare a War to exterminate the human race.<br /><b
+                  style="opacity: 0; cursor: default;">d</b>
               </p>
             </div>
           </div>
@@ -76,12 +106,14 @@
         <div id="04" class="mapOverall">
           <div class="mapContianer">
             <div class="mapImageContainer">
-              <img src="" alt="Kein Bild vorhanden" class="mapImage" />
+              <a href="./assets/WorldMap.jpg" target="_blank">
+                <img src="./assets/WorldMap.jpg" alt="Kein Bild vorhanden" class="mapImage" />
+              </a>
             </div>
             <div class="mapContentContainer">
-              <h4 class="mapContentTitle">
-                KGG geht Live
-              </h4>
+              <a onclick="toggleModal(4)" href="#" class="mapContentTitle">
+                World beyond room and time
+              </a>
               <p class="mapContentText">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, modi praesentium architecto pariatur
                 eum quos a numquam eaque, error dolore odio perferendis quae officiis ipsa perspiciatis eos facilis sed
@@ -91,43 +123,8 @@
           </div>
         </div>
       </div>
-      <div class="flexContainer">
-        <!-- Box 5 -->
-        <div id="05" class="mapOverall">
-          <div class="mapContianer">
-            <div class="mapImageContainer">
-              <img src="" alt="Kein Bild vorhanden" class="mapImage" />
-            </div>
-            <div class="mapContentContainer">
-              <h4 class="mapContentTitle">
-                KGG geht Live
-              </h4>
-              <p class="mapContentText">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum eligendi odit odio a. Fuga ullam
-                laudantium voluptatem quam, quidem unde fugiat id sint possimus sit officiis repudiandae culpa
-                recusandae non.
-              </p>
-            </div>
-          </div>
-        </div>
-        <!-- Box 6 -->
-        <div id="06" class="mapOverall">
-          <div class="mapContianer">
-            <div class="mapImageContainer">
-              <img src="" alt="Kein Bild vorhanden" class="mapImage" />
-            </div>
-            <div class="mapContentContainer">
-              <h4 class="mapContentTitle">
-                KGG geht Live
-              </h4>
-              <p class="mapContentText">
-                lorem ipsum dolor sit amet consectetur
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
+    <p style="margin-bottom: 9999rem;"></p>
   </section>
 
 </body>

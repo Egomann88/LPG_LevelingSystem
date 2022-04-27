@@ -32,3 +32,18 @@ async function insertCssClasses() {
     document.getElementById(id.toString().padStart(2, "0")).classList.add(rndClasses[css - 1]);
   }
 }
+/**
+ * 
+ * @param {Number} BoxId 
+ */
+async function toggleModal(BoxId = 0) {
+  console.log("BoxId: ", BoxId);
+  document.getElementById("modalPage").classList.toggle("hidden");
+}
+/**
+ * 
+ * @param {Number} MapId 
+ */
+async function fillModal(MapId) {
+  console.log("mapid", MapId);
+}
