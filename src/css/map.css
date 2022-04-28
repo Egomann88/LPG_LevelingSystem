@@ -26,13 +26,12 @@ p {
 
 .modalContainer {
   position: fixed;
-  top: 20%;
-  bottom: -20vh;
-  left: 20%;
+  top: 0;
+  bottom: 0;
+  left: 0;
   right: 0;
   overflow-y: auto;
-  translate: -20% -20%;
-  width: 100%;
+  max-width: 100%;
   z-index: 50;
   -webkit-box-shadow: 0px 10px 13px -7px #000000, 8px 8px 15px 15px rgba(0,0,0,0.69); 
   box-shadow: 0px 10px 13px -7px #000000, 8px 8px 15px 15px rgba(0,0,0,0.69);
@@ -48,8 +47,7 @@ p {
   flex-direction: column;
   margin: auto;
   background-color: #9c9c9c;
-  padding: 24px;
-  
+  padding: 12px 50px;
 }
 
 /* page */
@@ -117,9 +115,9 @@ p {
 
 /* media screens */
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
     .modalContainer{
-      width: 75%;
+      max-width: 50%;
       left: 25%;
     }
     .mapOverall {
