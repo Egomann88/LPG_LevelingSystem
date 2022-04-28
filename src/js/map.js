@@ -38,8 +38,8 @@ async function insertCssClasses() {
  * @function loadModal will load modal page in html 
  */
 async function toggleModal(BoxId) {
-  this.loadModal(BoxId);
-  document.getElementById("modalPage").classList.toggle("hidden");
+  if (await this.loadModal(BoxId))
+    document.getElementById("modalPage").classList.toggle("hidden");
 }
 /**
  * 
@@ -51,7 +51,7 @@ async function loadModal(MapId) {
   let HtmlId = "insertModal"; // id of html, which page will be loaded in
   switch (MapId) {
     case 0: // close Modal
-      return 0;
+      break;
     case 1:
       this.loadPage(HtmlId, path + "Namek.html");
       break;
@@ -64,6 +64,7 @@ async function loadModal(MapId) {
     default:
       alert("Page could not be loaded.");
       console.error("MapId was not found: ", MapId);
-      return 0;
+      return false;
   }
+  return true;
 }
