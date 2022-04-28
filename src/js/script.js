@@ -11,7 +11,7 @@
 } */
 
 window.onload = function init() {
-  this.loadHeader();
+  this.loadPage();
 }
 
 // functions
@@ -29,9 +29,11 @@ async function fetchHtmlAsText(url) {
 }
 
 /**
- * loads the Header
+ * tests and loads a page
+ * @param {String} pageId document Id the page will be inserted in
+ * @param {String} pageName complete name of the page (Standard: header) 
  */
-async function loadHeader() {
-  const contentDiv = document.getElementById("Header");
-  contentDiv.innerHTML = await fetchHtmlAsText("header.html");
+async function loadPage(pageId = "Header", pageName = "header.html") {
+  const contentDiv = document.getElementById(pageId);
+  contentDiv.innerHTML = await fetchHtmlAsText(pageName);
 }

@@ -5,7 +5,7 @@
 
 // onload
 window.onload = function init() {
-  this.loadHeader(); // loading the Header
+  this.loadPage(); // loading the Header
 }
 
 // functions
