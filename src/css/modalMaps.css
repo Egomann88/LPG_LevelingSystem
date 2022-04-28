@@ -1,0 +1,8 @@
+.continiued {
+  opacity: .6;
+  letter-spacing: 2px;
+}
+
+.gone {
+  text-decoration: line-through;
+}
