@@ -6,7 +6,7 @@
 // onload page
 
 window.onload = function init() {
-  this.loadHeader(); // loading the Header
+  this.loadPage(); // loading the Header
   //this.insertCssClasses();
 }
 
@@ -34,16 +34,36 @@ async function insertCssClasses() {
 }
 /**
  * 
- * @param {Number} BoxId 
+ * @param {Number} BoxId
+ * @function loadModal will load modal page in html 
  */
-async function toggleModal(BoxId = 0) {
-  console.log("BoxId: ", BoxId);
+async function toggleModal(BoxId) {
+  this.loadModal(BoxId);
   document.getElementById("modalPage").classList.toggle("hidden");
 }
 /**
  * 
- * @param {Number} MapId 
+ * @param {Number} MapId Id of Map, which shall be loaded
+ * @returns 0
  */
-async function fillModal(MapId) {
-  console.log("mapid", MapId);
+async function loadModal(MapId) {
+  let path = "./maps/"; // path of to html
+  let HtmlId = "insertModal"; // id of html, which page will be loaded in
+  switch (MapId) {
+    case 0: // close Modal
+      return 0;
+    case 1:
+      this.loadPage(HtmlId, path + "Namek.html");
+      break;
+    case 2:
+      this.loadPage(HtmlId, path + "Lorkarniya.html");
+      break;
+    case 3:
+      this.loadPage(HtmlId, path + "Asterya.html");
+      break;
+    default:
+      alert("Page could not be loaded.");
+      console.error("MapId was not found: ", MapId);
+      return 0;
+  }
 }
