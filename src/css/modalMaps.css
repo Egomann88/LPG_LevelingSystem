@@ -7,7 +7,7 @@
   text-decoration: line-through;
 }
 
-.titleContainer, .raceContainer {
+.titleContainer, .listsContainer, .raceContainer {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -37,7 +37,7 @@
 
 .race {
   flex: 0 0 auto;
-  margin: 10px;
+  max-width: 47%;
 }
 
 .second {
