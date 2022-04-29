@@ -7,13 +7,13 @@
   text-decoration: line-through;
 }
 
-.titleContainer {
+.titleContainer, .raceContainer {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-between;
   align-items: auto;
-  align-content: start
+  align-content: start;
 }
 
 .titleItems {
@@ -33,4 +33,13 @@
 
 .button:hover {
   background-color: #b8b8b8;
+}
+
+.race {
+  flex: 0 0 auto;
+  margin: 10px;
+}
+
+.second {
+  margin-left: auto;
 }
