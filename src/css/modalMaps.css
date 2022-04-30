@@ -1,3 +1,17 @@
+h2, h3, h4 {
+  margin-top: 0px;
+}
+
+h4 {
+  font-size: 22px;
+  color: #43494d;
+  margin-bottom: 20px;
+}
+
+p {
+  text-align: justify;
+}
+
 .continiued {
   opacity: .6;
   letter-spacing: 2px;
